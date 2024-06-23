@@ -8,16 +8,34 @@
   display: block;
 }
 
-.view-info{
+/* .view-info{
   font-size: small;
   display: flex;
   margin-bottom: 0;
   background-color: bisque;
-}
+} */
 
 .tag-bar{
-  font-size: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: rgba(137, 43, 226, 0.096);
+}
+
+.free-shipping-worldwide-tage{
+  font-size: 11px;
   font-weight: 500;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.country-tag{
+  font-size: 13px; 
+  font-weight: 600;
+  padding: 0;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .tag-box{
@@ -27,28 +45,52 @@
   padding: 0;
 }
 
-.tag-header{
+.shopper-text{
   font-size: 25px;
   font-weight: 600;
   padding: 0;
-  margin-left: 50px;
+  margin-left: 90px;
+  cursor: pointer;
+}
+.text-tag{
+  cursor: pointer;
 }
 
-.text{
+.text-tag:hover{
+  color: red;
+}
+
+.dropdown-menu{
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.text-line{
   position: relative;
   text-align: center;
   font-size: small;
 }
 
-.bin{
-  padding: 25px 50px;
+.women-cover-photo:hover{
+  /* -webkit-filter: blur(2px); */
+  transition: 1s ease;
 }
 
-.cover-photo{
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+.men-cover-photo:hover{
+  /* -webkit-filter: blur(2px); */
+  transition: 1s ease;
+}
+
+.kids-cover-photo:hover{
+  /* -webkit-filter: blur(2px); */
+  transition: 1s ease;
 }
 
 .center {
@@ -56,30 +98,57 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
   color: white;
 }
 
+.bin{
+  padding: 25px 108px;
+}
+
+.photo-storage-bin{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background-color: bisque;
+}
+
 .product-photo{
-  height: 50%;
+  height: 75%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.category-photo{
-  height: 30%;
-}
+/* .category-photo{
+  width: 100%;
+  height: 75%;
+} */
 
-.footer-box{
+.shopper-box{
   width: auto;
   height: 500px;
   padding: 50px;
 }
 
-.footer-cover-photo{
+/* .footer-cover-photo{
   width: 100%;
   height: 550px;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+
+.footer-box{
+  width: auto;
+  height: 550px;
+  padding: 50px;
+  background-color: black;
+  color: white;
+}
+
+.form-tag{
+  display: flex;
+  justify-content: center;
 }

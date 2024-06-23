@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 import "bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
+// import "bootstrap-icons/font/bootstrap-icons.css"
 
 document.querySelector('#app').innerHTML = `
   <div>

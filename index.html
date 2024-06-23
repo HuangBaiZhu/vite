@@ -1,67 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopper - Multipurpose E-Commerce Template</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
     <script type="module" src="/main.js"></script>
 
     <div class="root">
-
-      <div class="w-100">
+      <!-- <div class="w-100">
         <i class="bi bi-chevron-left"></i>
         <p class="view-info">View theme info</p>
-      </div>
-    
-      <div class="row bg-light w-100">
-        <div class="col-3 bg-body-tertiary m-0 p-0">
-          <p class="tag-bar">FREE SHIPPING WORLDWIDE</p>
-        </div>
+      </div> -->
 
-        <div class="col-3 bg-secondary ">
-          <p class="m-0 p-0">
-            United States
-            USD
-            English
-          </p>
-        </div>
-
-        <div class="col-3 bg-success">
-          <p class="m-0 p-0">
-            Shipping
-            FAQ
-            Contact
-          </p>
-        </div>
-  
-        <div class="col-3 bg-light-subtle">
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-twitter"></i>
-          <i class="bi bi-instagram"></i>
-        </div>
-      </div>
-  
-      <div class="tag-box">
+      <div class="tag-bar">
         <div class="row w-100">
+          <div class="col-2 w-50 gap-5 d-flex justify-content-center bg-danger-subtle">
+            <i class="bi bi-truck"></i>
+            <p class="free-shipping-worldwide-tage">FREE SHIPPING WORLDWIDE</p>
+            <div class="dropdown">
+              <p class="country-tag">United States</p>
+              <ul class="dropdown-menu">
+                <li><a href="#"></a>United States</li>
+                <li><a href="#"></a>Canada</li>
+                <li><a href="#"></a>Germany</li>
+              </ul>
+            </div>
+            
+            <div class="dropdown">
+              <p class="country-tag">USD</p>
+              <ul class="dropdown-menu">
+                <li><a href="#"></a>USD</li>
+                <li><a href="#"></a>EUR</li>
+              </ul>
+            </div>
+            
+            <div class="dropdown">
+              <p class="country-tag">English</p>
+              <ul class="dropdown-menu">
+                <li><a href="#">English</a></li>
+                <li><a href="#"></a>French</li>
+                <li><a href="#"></a>German</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="col-2 w-50 gap-4 d-flex justify-content-center bg-secondary-subtle"
+            style="cursor: pointer;"
+            >
+            <p style="font-size: 14px; font-weight: 600;">Shipping</p>
+            <p style="font-size: 14px; font-weight: 600;">FAQ</p>
+            <p style="font-size: 14px; font-weight: 600;">Contact</p>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="tag-box">
+        <div class="row w-100 p-4">
           <div class="col-4 bg-info">
-            <h5 class="tag-header">Shopper.</h5>
+            <h5 class="shopper-text">Shopper.</h5>
           </div>
-    
-          <div class="col-4 gap-4" style="display: flex; justify-content: center;">
-            <h6>Home</h6>
-            <h6>Catalog</h6>
-            <h6>Shop</h6>
-            <h6>Pages</h6>
-            <h6>Blog</h6>
-            <h6>Docs</h6>
+
+          <div
+            class="col-4 gap-4 bg-info-subtle"
+            style="display: flex; justify-content: center"
+            >
+            <div class="dropdown">
+              <h6 class="text-tag">Home</h6>
+              <ul class="dropdown-menu">
+                <li><a href="#">Default</a></li>
+                <li><a href="#"></a>Classic</li>
+                <li><a href="#"></a>Fashion</li>
+                <li><a href="#"></a>Boxed</li>
+                <li><a href="#"></a>Simple</li>
+                <li><a href="#"></a>Asymmetric</li>
+                <li><a href="#"></a>Sidenav</li>
+                <li><a href="#"></a>Landing</li>
+              </ul>
+            </div>
+            
+            <div class="dropdown">
+              <h6 class="text-tag">Catalog</h6>
+              <ul class="dropdown-menu">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            
+            <div class="dropdown">
+              <h6 class="text-tag">Shop</h6>
+              <ul class="dropdown-menu">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            
+            <div class="dropdown">
+              <h6 class="text-tag">Pages</h6>
+              <ul class="dropdown-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Coming Soon</a></li>
+                <li><a href="#">404</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <h6 class="text-tag">Blog</h6>
+              <ul class="dropdown-menu">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Blog Post</a></li>
+              </ul>
+            </div>
+
+            <h6 class="text-tag">Docs</h6>
           </div>
-  
-          <div class="col-4 bg-danger gap-3">
+
+          <div class="col-4 gap-3 bg-danger" style="cursor: pointer;">
             <i class="bi bi-search"></i>
             <i class="bi bi-person"></i>
             <i class="bi bi-heart"></i>
@@ -69,24 +134,24 @@
           </div>
         </div>
       </div>
-  
-      <div class="text w-100">
+
+      <div class="text-line">
         <p class="bg-black text-light p-3">HAPPY HOLIDAY DEALS ON EVERYTHING</p>
       </div>
 
-      <div class="row">
-        <div class="col-4" style="position: relative;">
-          <img class="cover-photo" src="./images/cover-1.jpg">
+      <div style="display: flex; cursor: pointer;">
+        <div style="width: 33.33%; position: relative">
+          <img class="women-cover-photo" style="width: 100%" src="./images/cover-1.jpg" />
           <div class="center">Women</div>
         </div>
 
-        <div class="col-4" style="position: relative;">
-          <img class="cover-photo" src="./images/cover-2.jpg">
+        <div style="width: 33.33%; position: relative">
+          <img class="men-cover-photo" style="width: 100%" src="./images/cover-2.jpg" />
           <div class="center">Men</div>
         </div>
 
-        <div class="col-4" style="position: relative;">
-          <img class="cover-photo" src="./images/cover-3.jpg">
+        <div style="width: 33.33%; position: relative">
+          <img class="kids-cover-photo" style="width: 100%; height: 100%;" src="./images/cover-3.jpg" />
           <div class="center">Kids</div>
         </div>
       </div>
@@ -94,97 +159,109 @@
       <div class="bin">
         <div class="row">
           <div class="col-3 bg-warning">
+            <div>
+              <i class="bi bi-truck"></i>
+            </div>
             <h6>FREE SHIPPING</h6>
             <h6 class="text-muted">From all orders over $100</h6>
           </div>
-    
-          <div class="col-3 bg-danger ">
+
+          <div class="col-3 bg-danger">
+            <div>
+              <i class="bi bi-repeat"></i>
+            </div>
             <h6>FREE RETURNS</h6>
             <h6 class="text-muted">Return money within 30 days</h6>
           </div>
-    
-          <div class="col-3 bg-info ">
+
+          <div class="col-3 bg-info">
+            <div>
+              <i class="bi bi-lock"></i>
+            </div>
             <h6>SECURE SHOPPING</h6>
             <h6 class="text-muted">You're in safe hands</h6>
           </div>
-    
-          <div class="col-3 bg-success ">
+
+          <div class="col-3 bg-success">
+            <div>
+              <i class="bi bi-tag"></i>
+            </div>
             <h6>OVER 10,000 STYLES</h6>
             <h6 class="text-muted">We have everything you need</h6>
           </div>
         </div>
-          <hr>
+        <hr class="mt-4" />
       </div>
-  
-      <div style="text-align: center; padding-top: 50px; padding-bottom: 40px;">
-        <h6>NEW COLLECTION</h6>
-        <h3>Best Picks 2019</h3>
-        <p>
-          Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,
-            <br> 
+
+      <div style="text-align: center; padding-top: 50px; padding-bottom: 40px">
+        <p style="font-weight: 700; font-size: 13px;" class="text-muted">NEW COLLECTION</p>
+        <h2>Best Picks 2019</h2>
+        <p class="text-muted">
+          Appear, dry there darkness they're seas, dry waters thing fly midst.
+          Beast,
+          <br />
           above fly brought Very green.
         </p>
       </div>
-  
-      <div>
-        <div class="row">
-          <div class="col-4">
-            <img class="product-photo" src="./images/product-1.jpg">
-          </div>
-  
-          <div class="col-8">
-            <img class="product-photo" src="./images/product-2.jpg">
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-8">
-            <img class="product-photo" src="./images/product-3.jpg">
+      <div class="photo-storage-bin">
+        <div class="row w-100">
+          <div class="col-2 d-flex justify-content-center bg-danger">
+            <img class="product-photo" src="./images/product-1.jpg" />
           </div>
   
-          <div class="col-4">
-            <img class="product-photo" src="./images/product-4.jpg">
+          <div class="col-2 d-flex justify-content-center bg-warning-subtle">
+            <!-- <img class="product-photo" src="./images/product-2.jpg" /> -->
           </div>
         </div>
       </div>
+
+      <div class="photo-storage-bin">
+        <div class="row w-100">
+          <div class="col-8 d-flex justify-content-center bg-dark-subtle">
+            <!-- <img class="product-photo" src="./images/product-3.jpg" /> -->
+          </div>
   
+          <div class="col-4 d-flex justify-content-center bg-primary">
+            <!-- <img class="product-photo" src="./images/product-4.jpg" /> -->
+          </div>
+        </div>
+      </div>
+
       <div class="text-center">
-        <h2>Top month Sellers</h2>
+        <h2 class="pt-5">Top month Sellers</h2>
+        
       </div>
 
-      <div class="row container-fluid text-center bg-danger-subtle mt-3 mb-5">
-        <div class="col">
-            Women
-            Men
-            Kids
-        </div>
-      </div>
+      <!-- <div class="row container-fluid text-center bg-danger-subtle mt-3 mb-5">
+        <div class="col">Women Men Kids</div>
+      </div> -->
 
-      <div>
+      <!-- <div class="w-100 ">
         <div class="row">
           <div class="col-3">
-            <img class="category-photo" src="./images/product-5.jpg">
+            <img class="category-photo" src="./images/product-5.jpg" />
             <p>Shoes</p>
             <h6>Leather mid-heel Sandals</h6>
             <h6>$129.00</h6>
           </div>
 
           <div class="col-3">
-            <img class="category-photo" src="./images/product-6.jpg">
+            <img class="category-photo" src="./images/product-6.jpg" />
             <p>Dresses</p>
             <h6>Cotton floral print Dress</h6>
             <h6>$40.00</h6>
           </div>
 
           <div class="col-3">
-            <img class="category-photo" src="./images/product-7.jpg">
+            <img class="category-photo" src="./images/product-7.jpg" />
             <p>Shoes</p>
             <h6>Leather Sneakers</h6>
             <h6>$85.00 $85.00</h6>
           </div>
 
           <div class="col-3">
-            <img class="category-photo" src="./images/product-8.jpg">
+            <img class="category-photo" src="./images/product-8.jpg" />
             <p>Tops</p>
             <h6>Cropped cotton Top</h6>
             <h6>$29.00</h6>
@@ -193,56 +270,111 @@
 
         <div class="row">
           <div class="col-3">
-            <img class="category-photo" src="./images/product-9.jpg">
+            <img class="category-photo" src="./images/product-9.jpg" />
             <p>Dresses</p>
             <h6>Floral print midi Dress</h6>
             <h6>$50.00</h6>
           </div>
 
           <div class="col-3">
-            <img class="category-photo" src="./images/product-10.jpg">
+            <img class="category-photo" src="./images/product-10.jpg" />
             <p>Bags</p>
             <h6>Suede cross body Bag</h6>
             <h6>$79.00 $49.00</h6>
           </div>
 
           <div class="col-3">
-            <img class="category-photo" src="./images/product-11.jpg">
+            <img class="category-photo" src="./images/product-11.jpg" />
             <p>Skirts</p>
             <h6>Printed A-line Skirt</h6>
             <h6>$79.00</h6>
           </div>
 
           <div class="col-3">
-            <img class="category-photo" src="./images/product-12.jpg">
+            <img class="category-photo" src="./images/product-12.jpg" />
             <p>Shoes</p>
             <h6>Heel strappy Sandals</h6>
             <h6>$90.00</h6>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div>
-        Discover more
-      </div>
+      <div style="text-align: center;">Discover more</div>
 
-      <div>
-        <img class="footer-cover-photo" src="./images/cover-4.jpg">
-      </div>
+      <!-- <div>
+        <img class="w-100 footer-cover-photo" src="./images/cover-4.jpg" />
+      </div> -->
 
       <div class="text-center">
         <h6 class="text-muted">WHAT BUYERS SAY</h6>
         <h1>Latest buyers Reviews</h1>
       </div>
 
-      <div class="footer-box bg-light">
+      <div class="shopper-box bg-light">
         <div class="text-center">
           <h2>@shopper</h2>
           <p>Appear, dry there darkness they're seas, dry waters.</p>
         </div>
       </div>
 
+      <div class="footer-box">
+        
+        <div style="text-align: center;">
+          <h3>Want style Ideas and Treats?</h3>
+        </div>
+
+        <div class="form-tag">
+          <input type="text" placeholder="Enter Email *">
+          <button>Subscribe</button>
+        </div>
+
+        <div class="row w-100">
+          <div class="col-2">
+            <h4>Shopper.</h4>
+          </div>
+
+          <div class="col-2">
+            SUPPORT
+            <p>
+              Contact Us
+              FAQs
+              Size Guide
+              Shipping & Returns
+            </p>
+          </div>
+
+          <div class="col-2">
+            SHOP
+            <p>
+              Men's Shopping
+              Women's Shopping
+              Kids' Shopping
+              Discounts
+            </p>
+          </div>
+
+          <div class="col-2">
+            COMPANY
+            <p>
+              Our Story
+              Careers
+              Terms & Conditions
+              Privacy & Cookie policy
+            </p>
+          </div>
+
+          <div class="col-2">
+            CONTACT
+            <p>
+              1-202-555-0105
+              1-202-555-0106
+              help@shopper.com
+            </p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </body>
 </html>
-
